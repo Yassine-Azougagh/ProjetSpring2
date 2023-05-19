@@ -14,9 +14,7 @@ pipeline {
          stage('Builsing image'){
              steps{
                  script{
-                  sh 'docker buildx -t yassineazougagh/spring_api -f ProjetSpring2/Dockerfile';
-                     
-                  sh  'docker run -it yassineazougagh/spring_api'  
+                  sh 'docker buildx -t yassineazougagh/spring_api -f ProjetSpring2/Dockerfile';  
                  }
              }
         }
